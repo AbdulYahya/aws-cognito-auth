@@ -16,6 +16,7 @@ export class AboutComponent {
     templateUrl: './landinghome.html'
 })
 export class HomeLandingComponent {
+
     constructor() {
         console.log("HomeLandingComponent constructor");
     }
@@ -26,6 +27,7 @@ export class HomeLandingComponent {
     templateUrl: './home.html'
 })
 export class HomeComponent implements OnInit {
+    isCollapsed: boolean = true;
 
     constructor() {
         console.log("HomeComponent constructor");
@@ -34,6 +36,11 @@ export class HomeComponent implements OnInit {
     ngOnInit() {
 
     }
+
+    collapsed(event: any): void {
+      console.log(event);
+    }
+    expanded(event: any): void {
+      console.log(event);
+    }
 }
-
-

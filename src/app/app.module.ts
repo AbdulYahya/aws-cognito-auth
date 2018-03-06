@@ -23,6 +23,8 @@ import {ResendCodeComponent} from "./public/auth/resend/resendCode.component";
 import {NewPasswordComponent} from "./public/auth/newpassword/newpassword.component";
 import { MFAComponent } from './public/auth/mfa/mfa.component';
 
+import { ModalModule } from 'ngx-bootstrap/modal';
+import { CollapseModule } from 'ngx-bootstrap/collapse';
 
 @NgModule({
     declarations: [
@@ -48,7 +50,9 @@ import { MFAComponent } from './public/auth/mfa/mfa.component';
         BrowserModule,
         FormsModule,
         HttpModule,
-        routing
+        routing,
+        ModalModule.forRoot(),
+        CollapseModule.forRoot()
     ],
     providers: [
         CognitoUtil,
