@@ -1,4 +1,4 @@
-Cognito Quickstart
+Cognito Sample Auth App
 ===================================================
 
 ## What does this app do?
